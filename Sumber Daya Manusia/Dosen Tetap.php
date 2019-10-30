@@ -1,6 +1,5 @@
 <html>
     <body>
-<<<<<<< HEAD
         <?php 
             include "Profil Dosen.php";
             include "connection.php";

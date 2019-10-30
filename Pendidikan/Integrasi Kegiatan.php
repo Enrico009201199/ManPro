@@ -8,14 +8,25 @@
             <div class="">
             <table>
                 <tr>
-                    <th>abc</th>
-                    <th>def</th>
-                    <th>ghi</th>
+                    <th>No.</th>
+                    <th>Judul Penelitian/PkM</th>
+                    <th>Nama Dosen</th>
+                    <th>Mata Kuliah</th>
+                    <th>Bentuk Integrasi</th>
                 </tr>
                 <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </table>
         </div>

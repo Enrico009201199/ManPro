@@ -91,26 +91,7 @@
             }
             echo "</table>";
             ?>
-=======
-        <?php include "Profil Dosen.php"?>
-        <div class="">
-            <h3>Dosen Tetap Perguruan Tinggi</h3>
-            <table>
-                <tr>
-                    <th>No.</th>
-                    <th>Nama Dosen</th>
-                    <th>Dion</th>
-                    <th>Ganteng</th>
-                </tr>
-                <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>iya</td>
-                </tr>
-            </table>
->>>>>>> timIntan
-        </div>
+                    </div>
         </div>
         <br>
         <div class="">

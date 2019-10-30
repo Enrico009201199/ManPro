@@ -7,7 +7,7 @@
                 <tr>
                     <th>No.</th>
                     <th>Nama Dosen</th>
-                    <th>NIDK</th>
+                    <th>Dion</th>
                     <th>Ganteng</th>
                 </tr>
                 <tr>

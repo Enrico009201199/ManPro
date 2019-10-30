@@ -5,9 +5,9 @@
             <h3>Dosen Tetap Perguruan Tinggi</h3>
             <table>
                 <tr>
-                    <th>abc</th>
-                    <th>def</th>
-                    <th>ghi</th>
+                    <th>No.</th>
+                    <th>Nama Dosen</th>
+                    <th>NIDK</th>
                 </tr>
                 <tr>
                 <td>Alfreds Futterkiste</td>

@@ -8,11 +8,13 @@
                     <th>No.</th>
                     <th>Nama Dosen</th>
                     <th>NIDK</th>
+                    <th>Ganteng</th>
                 </tr>
                 <tr>
                 <td>Alfreds Futterkiste</td>
                 <td>Maria Anders</td>
                 <td>Germany</td>
+                <td>iya</td>
                 </tr>
             </table>
         </div>

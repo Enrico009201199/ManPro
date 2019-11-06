@@ -26,8 +26,13 @@ echo "<table>";
 $no = 1;
 while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
   echo "<tr>";
+  if($row['sumberPembiayaan'] != 'Jumlah'){
     echo "<td>" . $no . "</td>";
     echo "<td>" . $row['sumberPembiayaan'] . "</td>";
+}
+else{
+    echo "<td colspan=2>" . $row['sumberPembiayaan'] . "</td>";
+}
     echo "<td>" . $row['ts2'] . "</td>";
     echo "<td>" . $row['ts1'] . "</td>";
     echo "<td>" . $row['ts'] . "</td>";

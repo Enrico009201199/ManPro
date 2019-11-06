@@ -23,3 +23,8 @@
         </div>
     </body>
 </html>
+
+<script>
+    var x = document.getElementById("change1");
+    x.innerHTML = "Produk/jasa DTPS yang diadopsi oleh industri/masyarakat";
+</script>

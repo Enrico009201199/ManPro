@@ -22,3 +22,8 @@
         </div>
     </body>
 </html>
+
+<script>
+    var x = document.getElementById("change2");
+    x.innerHTML = "Penelitian DTPS yang menjadi rujukan tema tesis/disertasi";
+</script>

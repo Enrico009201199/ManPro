@@ -27,6 +27,9 @@ echo "</tr>";
 
 //Table Content
 //Nomor Baris
+$jumlahWilayah=0;
+$jumlahNasional=0;
+$jumlahInternasional=0;
 $no = 1;
 while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
   echo "<tr>";
@@ -35,12 +38,26 @@ while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
     echo "<td>" . $row['Bidang Keahlian'] . "</td>";
     echo "<td>" . $row['Rekognisi'] . "</td>";
     echo "<td>" . $row['Wilayah'] . "</td>";
+    if($row['Wilayah'] != null){
+      $jumlahWilayah ++;
+    }
     echo "<td>" . $row['Nasional'] . "</td>";
+    if($row['Nasional'] != null){
+      $jumlahNasional ++;
+    }
     echo "<td>" . $row['Internasional'] . "</td>";
+    if($row['Internasional'] != null){
+      $jumlahInternasional ++;
+    }
     echo "<td>" . $row['Tahun'] . "</td>";
   echo "</tr>";
   $no ++;
 }
+echo "<td colspan=4> Jumlah </td>";
+echo "<td>" . $jumlahWilayah . "</td>";
+echo "<td>" . $jumlahNasional . "</td>";
+echo "<td>" . $jumlahInternasional . "</td>";
+echo "<td>"."</td>";
 echo "</table>";
 
 ?>

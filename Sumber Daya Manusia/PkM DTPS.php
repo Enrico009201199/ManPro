@@ -12,6 +12,8 @@ $stmt = sqlsrv_query($conn,$query);
 //Baris 1
 echo "<table>";
     echo "<tr>";
+    echo "<th rowspan='2'>No</th>";
+
         echo "<th rowspan='2'>Sumber Pembiayaan</th>";
         echo "<th colspan='3'>Jumlah Judul</th>";
         echo "<th rowspan='2'>Jumlah</th>";
@@ -22,15 +24,21 @@ echo "<table>";
         echo "<th>TS-1</th>";
         echo "<th>TS</th>";
     echo "</tr>";
+    $nomor=1;
+
 //Table Content
 while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
   echo "<tr>";
+  echo "<td>" . $nomor . "</td>";
+
       echo "<td>" . $row['sumberPembiayaan'] . "</td>";
       echo "<td>" . $row['ts2'] . "</td>";
       echo "<td>" . $row['ts1'] . "</td>";
       echo "<td>" . $row['ts'] . "</td>";
       echo "<td>" . $row['jumlah'] . "</td>";
   echo "</tr>";
+  $nomor++;
+
 }
 echo "</table>";
 ?>
@@ -42,3 +50,8 @@ echo "</table>";
         </div>
     </body>
 </html>
+
+<script>
+    var x = document.getElementById("change1");
+    x.innerHTML = "Pengabdian kepada Masyarakat (PkM) DTPS";
+</script>

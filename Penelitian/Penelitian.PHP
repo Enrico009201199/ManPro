@@ -5,7 +5,7 @@
         <div class="">
             <h3>Penelitian</h3>
             <div class="dropdown dropdownpamong">
-                <button class="dropbtn">Penelitian DTPS yang melibatkan mahasiswa
+                <button class="dropbtn"><span id="change2">Penelitian DTPS yang melibatkan mahasiswa</span>
                 <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">

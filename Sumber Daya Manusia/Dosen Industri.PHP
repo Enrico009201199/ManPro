@@ -23,3 +23,8 @@
         </div>
     </body>
 </html>
+
+<script>
+    var x = document.getElementById("change");
+    x.innerHTML = "Dosen Industri/Praktisi ";
+</script>

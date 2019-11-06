@@ -5,7 +5,7 @@
         <div class="">
             <h3>Kinerja Dosen</h3>
             <div class="dropdown dropdownpamong">
-                <button class="dropbtn">Pengakuan/Rekognisi DTPS
+                <button class="dropbtn"><span id="change1">Pengakuan/Rekognisi DTPS</span>
                 <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">

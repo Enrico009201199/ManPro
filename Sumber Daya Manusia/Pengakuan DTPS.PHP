@@ -14,6 +14,7 @@ $stmt = sqlsrv_query($conn,$query);
 echo "<table>";
 //Baris 1
 echo "<tr>";
+    echo "<th rowspan='2'>No</th>";
     echo "<th rowspan='2'>Nama Dosen</th>";
     echo "<th rowspan='2'>Bidang Keahlian</th>";
     echo "<th rowspan='2'>Rekognisi dan Bukti Pendukung</th>";
@@ -26,10 +27,12 @@ echo "<tr>";
     echo "<th>Nasional</th>";
     echo "<th>Internasional</th>";
 echo "</tr>";
+$nomor=1;
 
 //Table Content
 while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
   echo "<tr>";
+      echo "<td>" . $nomor . "</td>";
       echo "<td>" . $row['NamaDosen'] . "</td>";
       echo "<td>" . $row['Bidang Keahlian'] . "</td>";
       echo "<td>" . $row['Rekognisi'] . "</td>";
@@ -38,6 +41,8 @@ while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
       echo "<td>" . $row['Internasional'] . "</td>";
       echo "<td>" . $row['Tahun'] . "</td>";
   echo "</tr>";
+  $nomor++;
+
 }
 echo "</table>";
 
@@ -50,3 +55,8 @@ echo "</table>";
         </div>
     </body>
 </html>
+
+<script>
+    var x = document.getElementById("change1");
+    x.innerHTML = "Pengakuan/Rekognisi DTPS";
+</script>

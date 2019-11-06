@@ -33,19 +33,24 @@ sqlsrv_next_result($stmt);
 //Table Header
 echo "<table>";
 echo "<tr>";
+echo "<th>No</th>";
     echo "<th>Na</th>";
     echo "<th>Nb</th>";
     echo "<th>Rlp</th>";
     echo "<th>Skor</th>";
 echo "</tr>";
+$nomor=1;
+
 //Table Content
 while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
     echo "<tr>";
+    echo "<td>" . $nomor . "</td>";
         echo "<td>" . $row['Na'] . "</td>";
         echo "<td>" . $row['Nb'] . "</td>";
         echo "<td>" . $row['Rlp'] . "</td>";
         echo "<td>" . $row['skor'] . "</td>";
     echo "</tr>";
+    $nomor++;
 }
 echo "</table>";
 
@@ -58,3 +63,8 @@ echo "</table>";
         </div>
     </body>
 </html>
+
+<script>
+    var x = document.getElementById("change1");
+    x.innerHTML = "Luaran Penelitian/PkM Lainnya oleh DTPS";
+</script>

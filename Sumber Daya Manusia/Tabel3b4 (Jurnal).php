@@ -22,39 +22,33 @@ echo "<table>";
         echo "<th>TS</th>";
     echo "</tr>";
 //Table Content
+//Init Variable Jumlah
+$jumlahTs2 = 0;
+$jumlahTs1 = 0;
+$jumlahTs = 0;
+$jumlahTotal = 0;
 //Nomor Baris
 $no = 1;
 while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
-  echo "<tr>";
-    echo "<td>" . $no . "</td>";
-    echo "<td>" . $row['jenisPublikasi'] . "</td>";
-    echo "<td>" . $row['ts2'] . "</td>";
-    echo "<td>" . $row['ts1'] . "</td>";
-    echo "<td>" . $row['ts'] . "</td>";
-    echo "<td>" . $row['jumlah'] . "</td>";
-  echo "</tr>";
-  $no ++;
+  if($row['jenisPublikasi'] != 'Jumlah'){
+    echo "<tr>";
+      echo "<td>" . $no . "</td>";
+      echo "<td>" . $row['jenisPublikasi'] . "</td>";
+      echo "<td>" . $row['ts2'] . "</td>";
+      echo "<td>" . $row['ts1'] . "</td>";
+      echo "<td>" . $row['ts'] . "</td>";
+      echo "<td>" . $row['jumlah'] . "</td>";
+    echo "</tr>";
+    $no ++;
+  }
+  else{
+    $jumlahTs2 += $row['ts2'];
+    $jumlahTs1 += $row['ts1'];
+    $jumlahTs += $row['ts'];
+    $jumlahTotal += $row['jumlah'];
+  }
 }
-echo "</table>";
 
-// //Pindah Ke select ke-2 (Tabel 2)
-// sqlsrv_next_result($stmt);
-// //Table Header
-// echo "<table>";
-// echo "<tr>";
-//     echo "<th>Lokal</th>";
-//     echo "<th>Nasional</th>";
-//     echo "<th>Internasional</th>";
-//     echo "<th>Skor</th>";
-// echo "</tr>";
-// //Table Content
-// while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
-//     echo "<tr>";
-//         echo "<td>" . $row['lokal'] . "</td>";
-//         echo "<td>" . $row['nasional'] . "</td>";
-//         echo "<td>" . $row['internasional'] . "</td>";
-//         echo "<td>" . $row['skor'] . "</td>";
-//     echo "</tr>";
-// }
-// echo "</table>";
+include "Tabel3b4 (Seminar).php";
+include "Tabel3b4 (Tulisan).php";
 ?>

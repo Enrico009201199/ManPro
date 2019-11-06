@@ -18,7 +18,7 @@
         </div>
         <br>
         <div class="">
-            <a href="Grafik/Grafik Penelitian Pelibatkan Mahasiswa.php" target="_blank">Tampilkan Grafik Penelitian DTPS yang melibatkan mahasiswa</a> 
+            <a href="Grafik/Grafik Penelitian Melibatkan Mahasiswa.php" target="_blank">Tampilkan Grafik Penelitian DTPS yang melibatkan mahasiswa</a> 
         </div>
     </body>
 </html>

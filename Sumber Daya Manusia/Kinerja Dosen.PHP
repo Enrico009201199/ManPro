@@ -14,7 +14,6 @@
                     <a href="PkM DTPS.php">Pengabdian kepada Masyarakat (PkM) DTPS</a>
                     <a href="Pagelaran DTPS.php">Pagelaran/pameran/presentasi/publikasi Ilmiah DTPS</a>
                     <a href="Karya Ilmiah DTPS.php">Karya ilmiah DTPS yang disitasi dalam 3 tahun terakhir</a>
-                    <a href="Produk DTPS.php">Produk/jasa DTPS yang diadopsi oleh industri/masyarakat </a>
                     <a href="Luaran Penelitian DTPS.php"> Luaran Penelitian/PkM Lainnya oleh DTPS</a>
                 </div>
             </div> 

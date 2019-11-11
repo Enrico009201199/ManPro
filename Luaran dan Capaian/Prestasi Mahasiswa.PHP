@@ -1,7 +1,6 @@
 <html>
     <body>
-        <?php include "../Header/Header.php"
-        include "Kinerja Dosen.php";
+        <?php include "../Header/Header.php";
         include "connection.php";
         include "style.html";
 

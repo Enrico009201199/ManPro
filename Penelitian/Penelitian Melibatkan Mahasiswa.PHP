@@ -47,7 +47,7 @@ echo "<tr>";
 echo "</tr>";
 
 echo "</table>";
-
+?>
         </div>
         <br>
         <div class="">

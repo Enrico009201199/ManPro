@@ -6,7 +6,7 @@
             <?php 
 //Connect Database
 include '../connection.php';
-include "../style.css";
+include "style.html";
 
 $query = "EXEC dbo.Tabel6a_PenelitianDTPSMahasiswa";
 $noCount = sqlsrv_query($conn,"SET NOCOUNT ON");

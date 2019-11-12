@@ -5,8 +5,8 @@
             <h3>Penelitian DTPS yang melibatkan mahasiswa</h3>
             <?php 
 //Connect Database
-include 'connection.php';
-include "style.html";
+include '../connection.php';
+include "../style.html";
 
 $query = "EXEC dbo.Tabel6a_PenelitianDTPSMahasiswa";
 $noCount = sqlsrv_query($conn,"SET NOCOUNT ON");

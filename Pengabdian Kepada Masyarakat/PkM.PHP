@@ -6,20 +6,7 @@
             <h3>Pengabdian kepada Masyarakat (PkM)</h3>
             
             <div class="">
-<<<<<<< Updated upstream
-            <table>
-                <tr>
-                    <th>abc</th>
-                    <th>def</th>
-                    <th>ghi</th>
-                </tr>
-                <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                </tr>
-            </table>
-=======
+
             <?php 
 //Connect Database
 include '../connection.php';
@@ -63,8 +50,9 @@ echo "<tr>";
 echo "</tr>";
 
 echo "</table>";
+
 ?>
->>>>>>> Stashed changes
+
         </div>
         </div>
         <br>
@@ -73,3 +61,4 @@ echo "</table>";
         </div>
     </body>
 </html>
+

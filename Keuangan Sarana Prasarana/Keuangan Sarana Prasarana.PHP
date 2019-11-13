@@ -33,14 +33,20 @@
     $row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC);
     echo "<tr>";
     echo "<td>" . $row['Nomor'] . "</td>";
-    echo "<td colspan='9'>" . $row['jenisPenggunaan'] . "</td>";
+    echo "<td colspan='9' style='text-align:left'>" . $row['jenisPenggunaan'] . "</td>";
 
     $no++;
 
     while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
         echo "<tr>";
-        echo "<td>" . $row['Nomor'] . "</td>";
-        echo "<td>" . $row['jenisPenggunaan'] . "</td>";
+        if($no == 14 || $no==15 || $no==7 || $no==10){
+            
+            echo "<td colspan='2'>" . $row['jenisPenggunaan'] . "</td>";
+        }
+        else{
+            echo "<td>" . $row['Nomor'] . "</td>";
+            echo "<td>" . $row['jenisPenggunaan'] . "</td>";
+        }
 
         if ($no != 1) {
             echo "<td>" . number_format($row['TS_2_UPPS'], 0, ".", ",") . "</td>";

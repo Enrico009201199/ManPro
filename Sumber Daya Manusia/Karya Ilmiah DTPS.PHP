@@ -1,6 +1,6 @@
 <html>
     <body>
-        <<?php 
+        <?php 
 //Connect Database
 include "Kinerja Dosen.php";
 include 'connection.php';

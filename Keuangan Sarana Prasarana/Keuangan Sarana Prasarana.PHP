@@ -1,5 +1,4 @@
 <html>
-
 <body>
     <?php include "../Header/Header.php";
     include "connection.php";
@@ -8,7 +7,7 @@
     $query = "EXEC dbo.Tabel4_PenggunaanDana";
     $noCount = sqlsrv_query($conn, "SET NOCOUNT ON");
     $stmt = sqlsrv_query($conn, $query);
-
+    echo"<h3>Keuangan, Sarana, dan Prasarana</h3>";
     //Baris 1
     echo "<table>";
     echo "<tr>";

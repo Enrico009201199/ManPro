@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Bar Chart</title>
+    <script src="../../Chart.bundle.js"></script>
+    <script src="../../utils.js"></script>
+    <style>
+    canvas{
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    </style>
+</head>
+
+<body>
+	<div style="width:50%;">
+		<canvas id="canvas"></canvas>
+	</div>
+    <script>
+		var dataDosen = [28.5, 47, 20.5, 32.5, 31, 36, 38, 36.5, 38.5, 32, 34.5, 35.5, 24, 24, 24, 24];
+		
+		var myChart = {
+			type: "bar",
+			data: {
+				datasets : [
+					{/* objek 1*/
+						label: "Jumlah SKS",
+						data: dataDosen,
+						borderWidth: 1,
+					}],
+				labels: ["RDL", "CEN", "TAB", "ELH", "VSM", "LCA", "VAN", "CHW", "MTA", "PAN", "RCP", "HUH", "JOP", "STD", "HES", "ADB"],
+			},
+			options: {
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: "Kode Dosen"
+						}
+					}],
+					yAxes : [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: "Jumlah SKS Mengajar"
+						}
+					}],
+				},
+				title: {
+					display: true,
+					text: "Jumlah SKS Mengajar Setiap Dosen Tetap"
+				},
+				responsive : true
+			},
+		};
+		
+		window.onload = function() {
+			var ctx = document.getElementById("canvas").getContext("2d");
+			new Chart(ctx, myChart);
+		};
+    </script>
+</body>
+
+</html>

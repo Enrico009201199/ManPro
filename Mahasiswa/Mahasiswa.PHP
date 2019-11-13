@@ -8,13 +8,14 @@
 <body>
     <?php
     include "../Header/Header.php";
-    include_once('connection.php');
-    $query = "select * from mahasiswa";
-    $result = mysqli_query($conn,$query);
+    include "connection.php";
+    $query = "select * from mtMahasiswa";
+    $result = sqlsrv_query($conn, $query);
     ?>
 
+    <h3>Mahasiswa</h3>
 	<div class="">
-        <h3>Kualitas Input Mahasiswa</h3>
+        
 		<div class="">
 			<div class="panel-body">
                 <div class="table">
@@ -28,7 +29,7 @@
                         </thead>
                         <tbody>
                             <?php
-                                while($rows = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+                                while($rows = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
                             ?>   
                             <tr>    
                                 <td> <?php echo $rows['No']; ?> </td>

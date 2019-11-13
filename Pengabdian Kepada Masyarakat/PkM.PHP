@@ -50,15 +50,4 @@ echo "<tr>";
 echo "</tr>";
 
 echo "</table>";
-
 ?>
-
-        </div>
-        </div>
-        <br>
-        <div class="">
-            <a href="Grafik/Grafik PkM.php" target="_blank">Tampilkan Grafik Pengabdian kepada Masyarakat (PkM)</a> 
-        </div>
-    </body>
-</html>
-

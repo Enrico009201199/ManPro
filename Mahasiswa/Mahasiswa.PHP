@@ -4,22 +4,22 @@
      <!-- TABLE STYLES-->
     <link href="css/dataTables.bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet" />
+    
 </head>
 <body>
     <?php
     include "../Header/Header.php";
-    include "connection.php";
-    $query = "select * from mtMahasiswa";
-    $result = sqlsrv_query($conn, $query);
+    include_once('connection.php');
+    $query = "select * from mahasiswa";
+    $result = mysqli_query($conn,$query);
     ?>
 
-    <h3>Mahasiswa</h3>
 	<div class="">
-        
+        <h3>Kualitas Input Mahasiswa</h3>
 		<div class="">
 			<div class="panel-body">
                 <div class="table">
-                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                    <table class="table table-striped table-bordered " id="dataTables-example">
                         <thead>
                             <tr>
                                 <th>No </th>
@@ -29,7 +29,7 @@
                         </thead>
                         <tbody>
                             <?php
-                                while($rows = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
+                                while($rows = mysqli_fetch_array($result, MYSQLI_ASSOC)){
                             ?>   
                             <tr>    
                                 <td> <?php echo $rows['No']; ?> </td>

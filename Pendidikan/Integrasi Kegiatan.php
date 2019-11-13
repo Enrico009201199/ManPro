@@ -1,6 +1,13 @@
 <html>
     <body>
-        <?php include "../Header/Header.php"?>
+        <?php
+            include "../Header/Header.php";
+            include "connection.php";
+            $query = "EXEC dbo.Tabel5b_IntegrasiKegiatanPenelitianPkM";
+            
+            $noCount = sqlsrv_query($conn, "SET NOCOUNT ON");
+            $stmt = sqlsrv_query($conn, $query);
+        ?>
 
         <div class="">
             <h3>Integrasi Kegiatan Penelitian/PkM Dalam Pembelajaran</h3>
@@ -8,15 +15,25 @@
             <div class="">
             <table>
                 <tr>
-                    <th>abc</th>
-                    <th>def</th>
-                    <th>ghi</th>
+                    <th>No.</th>
+                    <th>Judul Penelitian/PkM</th>
+                    <th>Nama Dosen</th>
+                    <th>Mata Kuliah</th>
+                    <th>Bentuk Integrasi</th>
                 </tr>
-                <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                </tr>
+                <?php
+                    $number = 1;
+                    while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
+                        echo "<tr>";
+                            echo "<td>".$number."</td>";
+                            echo "<td>".$row['judul']."</td>";
+                            echo "<td>".$row['dosen']."</td>";
+                            echo "<td>".$row['namaMatakuliah']."</td>";
+                            echo "<td>".$row['bentukIntegrasi']."</td>";
+                        echo "</tr>";
+                        $number++;
+                    }
+                ?>
             </table>
         </div>
         </div>

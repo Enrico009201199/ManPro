@@ -8,14 +8,34 @@
             <div class="">
             <table>
                 <tr>
-                    <th>abc</th>
-                    <th>def</th>
-                    <th>ghi</th>
+                    <th rowspan="2">No.</th>
+                    <th rowspan="2">Aspek yang Diukur</th>
+                    <th colspan="4">Tingkat Kepuasan Mahasiswa<br>(%)</th>
+                    <th rowspan="2">Rencana Tindak Lanjut oleh UPPS/PS</th>
                 </tr>
                 <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
+                    <th>Sangat Baik</th>
+                    <th>Baik</th>
+                    <th>Cukup</th>
+                    <th>Kurang</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </table>
             </div>

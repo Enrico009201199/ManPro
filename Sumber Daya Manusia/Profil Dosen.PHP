@@ -13,7 +13,6 @@
                     <a href="Dosen Pembimbing.php" >Dosen Pembimbing Utama Tugas Akhir</a>
                     <a href="EWMP.php"> Ekuivalen Waktu Mengajar Penuh (EWMP) Dosen Tetap Perguruan Tinggi</a>
                     <a href="Dosen Tidak Tetap.php"> Dosen Tidak Tetap Perguruan Tinggi</a>
-                    <a href="Dosen Industri.php"> Dosen Industri/Praktisi  </a>
                 </div>
 
                 <div id="content">

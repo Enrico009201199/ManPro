@@ -9,7 +9,7 @@
 
             <?php 
 //Connect Database
-include "../connection.php";
+include '../connection.php';
 include "style.html";
 
 $query = "EXEC dbo.Tabel7_PKMDTPSMahasiswa";

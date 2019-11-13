@@ -1,5 +1,6 @@
 <?php
 
+include "Kinerja Dosen.php";
 include "connection.php";
 include "style.html";
 

@@ -42,8 +42,7 @@ while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
 $no = $no - 1;
 echo "<tr>";
   echo "<td colspan=4> Jumlah </td>";
-  echo "<td>" . $no . "</td>";
-  echo "<td> </td>";
+  echo "<td colspan=2>" . $no . "</td>";
 echo "</tr>";
 
 echo "</table>";

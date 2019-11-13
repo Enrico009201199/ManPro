@@ -53,3 +53,7 @@ while($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
 include "Tabel3b4 (Seminar).php";
 include "Tabel3b4 (Tulisan).php";
 ?>
+<script>
+    var x = document.getElementById("change1");
+    x.innerHTML = "Publikasi Ilmiah DTPS";
+</script>

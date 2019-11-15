@@ -21,7 +21,7 @@
         <a href="../Home/Home.php">Home</a>
         <a href="../Visi dan Misi/Visi dan Misi.php">Visi dan Misi</a>
         <a href="../Tata Pamong/Tata Pamong.php">Tata Pamong,Tata Kelola dan Kerjasama</a>
-        <div class="dropdown">
+        <!-- <div class="dropdown">
             <button class="dropbtn">Mahasiswa
             <i class="fa fa-caret-down"></i>
             </button>
@@ -29,7 +29,8 @@
                 <a href="../Mahasiswa/Kualitas Input.php">Kualitas Input Mahasiswa</a>
                 <a href="../Mahasiswa/Mahasiswa Asing.php">Mahasiswa Asing</a>
             </div>
-        </div> 
+        </div>  -->
+        <a href="../Mahasiswa/Mahasiswa.php">Mahasiswa</a>
         <div class="dropdown">
             <button class="dropbtn">Sumber Daya Manusia
             <i class="fa fa-caret-down"></i>

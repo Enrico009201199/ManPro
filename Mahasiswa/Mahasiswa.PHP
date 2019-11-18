@@ -29,12 +29,13 @@
                         </thead>
                         <tbody>
                             <?php
+							$no = 1;
                                 while($rows = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
                             ?>   
                             <tr>    
-                                <td> <?php echo $rows['No']; ?> </td>
+                                <td> <?php echo "<td>" . $no . "</td>"; $no ++;?> </td>
                                 <td> <?php echo $rows['NPM']; ?> </td>
-                                <td> <?php echo $rows['Nama']; ?> </td>
+                                <td> <?php echo $rows['nama']; ?> </td>
                             </tr>
                             <?php
                                 }
@@ -47,7 +48,7 @@
 	</div>
 
     <div class="">
-        <a href="Grafik/Grafik Kualitas Input.php" target="_blank">Tampilkan Grafik Kualitas Input</a> 
+        <a href="Grafik/bar.html" target="_blank">Tampilkan Grafik Kualitas Input</a> 
     </div>
 
     <script src="js/jquery-1.10.2.js"></script>

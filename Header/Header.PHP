@@ -20,7 +20,7 @@
     <div class="navbar" style="background-color:#333333">
         <a href="../Home/Home.php">Home</a>
         <a href="../Visi dan Misi/Visi dan Misi.php">Visi dan Misi</a>
-        <a href="../Tata Pamong/Tata Pamong.php">Tata Pamong,Tata Kelola dan Kerjasama</a>
+        <a href="../Tata Pamong/Tata Pamong.php">Kerjasama</a>
         <!-- <div class="dropdown">
             <button class="dropbtn">Mahasiswa
             <i class="fa fa-caret-down"></i>

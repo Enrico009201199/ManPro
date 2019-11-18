@@ -26,6 +26,24 @@
                                 <th>NPM</th>
                                 <th>Nama</th>
                             </tr>
+							<?php 
+                    // total page yg tersedia
+                    $number_f_pages = ceil($number_of_results/$results_per_page);
+                    
+                    // halaman page yg sedang aktif
+                    if (!isset($_GET['page'])){
+                        $page = 1;
+                    } else{
+                        $page = $_GET['page'];
+                    }
+                    
+                    //Limit starting number for the results on the displaying page
+                    $this_page_first_result = ($page-1)*$results_per_page;
+
+                    //hasil dari database dan menampilkannya ke layar sesuai page
+                    $query = "SELECT * FROM mahasiswa LIMIT " . $this_page_first_result . ',' .$results_per_page;
+                    $result = mysqli_query($conn,$query);
+                ?>
                         </thead>
                         <tbody>
                             <?php
@@ -40,6 +58,16 @@
                             <?php
                                 }
                             ?>
+							<?php
+                echo "Halaman: ";
+                    for ($page=1 ; $page<=$number_f_pages; $page++){
+                        echo '<a href="Kualitas Input.php?page=' . $page . '">' . $page . '</a> ';
+                        
+                        if($page<$number_f_pages)
+                        echo '&nbsp';
+                    }
+                echo '<p>'
+                ?>    
                         </tbody>
                     </table>
                 </div>

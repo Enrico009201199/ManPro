@@ -4,70 +4,42 @@
      <!-- TABLE STYLES-->
     <link href="css/dataTables.bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet" />
-    
 </head>
 <body>
     <?php
     include "../Header/Header.php";
-    include_once('connection.php');
-    $query = "select * from mahasiswa";
-    $result = mysqli_query($conn,$query);
+    include "connection.php";
+    $query = "select * from mtMahasiswa";
+    $result = sqlsrv_query($conn, $query);
     ?>
 
+    <h3>Mahasiswa</h3>
 	<div class="">
-        <h3>Data Mahasiswa</h3>
+        
 		<div class="">
 			<div class="panel-body">
                 <div class="table">
-                    <table class="table table-striped table-bordered " id="dataTables-example">
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                         <thead>
                             <tr>
                                 <th>No </th>
                                 <th>NPM</th>
                                 <th>Nama</th>
                             </tr>
-							<?php 
-                    // total page yg tersedia
-                    $number_f_pages = ceil($number_of_results/$results_per_page);
-                    
-                    // halaman page yg sedang aktif
-                    if (!isset($_GET['page'])){
-                        $page = 1;
-                    } else{
-                        $page = $_GET['page'];
-                    }
-                    
-                    //Limit starting number for the results on the displaying page
-                    $this_page_first_result = ($page-1)*$results_per_page;
-
-                    //hasil dari database dan menampilkannya ke layar sesuai page
-                    $query = "SELECT * FROM mahasiswa LIMIT " . $this_page_first_result . ',' .$results_per_page;
-                    $result = mysqli_query($conn,$query);
-                ?>
                         </thead>
                         <tbody>
                             <?php
-							$no = 1;
+                                $no = 1;
                                 while($rows = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
                             ?>   
                             <tr>    
-                                <td> <?php echo $no; $no ++;?> </td>
+                                <td> <?php echo $no; $no++?> </td>
                                 <td> <?php echo $rows['NPM']; ?> </td>
                                 <td> <?php echo $rows['nama']; ?> </td>
                             </tr>
                             <?php
                                 }
                             ?>
-							<?php
-                echo "Halaman: ";
-                    for ($page=1 ; $page<=$number_f_pages; $page++){
-                        echo '<a href="Kualitas Input.php?page=' . $page . '">' . $page . '</a> ';
-                        
-                        if($page<$number_f_pages)
-                        echo '&nbsp';
-                    }
-                echo '<p>'
-                ?>    
                         </tbody>
                     </table>
                 </div>
@@ -76,7 +48,7 @@
 	</div>
 
     <div class="">
-        <a href="Grafik/bar.html" target="_blank">Tampilkan Grafik Kualitas Input</a> 
+        <a href="Grafik/Grafik Kualitas Input.php" target="_blank">Tampilkan Grafik Kualitas Input</a> 
     </div>
 
     <script src="js/jquery-1.10.2.js"></script>

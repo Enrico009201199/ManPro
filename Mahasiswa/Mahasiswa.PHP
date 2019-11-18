@@ -15,7 +15,7 @@
     ?>
 
 	<div class="">
-        <h3>Kualitas Input Mahasiswa</h3>
+        <h3>Data Mahasiswa</h3>
 		<div class="">
 			<div class="panel-body">
                 <div class="table">

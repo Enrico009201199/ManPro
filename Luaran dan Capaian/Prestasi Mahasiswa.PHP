@@ -9,7 +9,7 @@
         $stmt = sqlsrv_query($conn,$query);
 
         //Table Header
-            echo "<table>";
+            echo "<h3> Prestasi Mahasiswa </h3> <table>";
             echo "<tr>";
                 echo "<th>Kegiatan</th>";
                 echo "<th>Tahun</th>";
@@ -32,7 +32,7 @@
 
             ?>
 
-        <div class="">
+        <!-- <div class="">
             <h3>Prestasi Mahasiswa</h3>
             <div class="dropdown dropdownpamong">
                 <button class="dropbtn">Prestasi Akademik
@@ -43,7 +43,7 @@
                     <a href="Prestasi Non Akademik.php">Prestasi Non Akademik</a>
                 </div>
             </div> 
-        </div>
+        </div> -->
         <br>
         <br>
         <br>

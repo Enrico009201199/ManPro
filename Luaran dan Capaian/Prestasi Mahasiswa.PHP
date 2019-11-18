@@ -1,8 +1,8 @@
 <html>
     <body>
         <?php include "../Header/Header.php";
-        include "connection.php";
-        include "style.html";
+        include "../connection.php";
+        include "../Sumber Daya Manusia/style.html";
 
         $query = "select * from dbo.prestasi_mhs";
         $noCount = sqlsrv_query($conn,"SET NOCOUNT ON");
@@ -33,17 +33,8 @@
             ?>
 
         <div class="">
-            <h3>Prestasi Mahasiswa</h3>
-            <div class="dropdown dropdownpamong">
-                <button class="dropbtn">Prestasi Akademik
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="Prestasi Akademik.php">Prestasi Akademik</a>
-                    <a href="Prestasi Non Akademik.php">Prestasi Non Akademik</a>
-                </div>
-            </div> 
-        </div>
+			<a href="Grafik/bar.html" target="_blank">Tampilkan Grafik Kualitas Input</a> 
+		</div>
         <br>
         <br>
         <br>

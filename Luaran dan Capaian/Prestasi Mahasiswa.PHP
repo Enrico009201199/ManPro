@@ -2,7 +2,7 @@
     <body>
         <?php include "../Header/Header.php";
         include "connection.php";
-        include "style.html";
+        include "../Sumber Daya Manusia/style.html";
 
         $query = "select * from dbo.prestasi_mhs";
         $noCount = sqlsrv_query($conn,"SET NOCOUNT ON");

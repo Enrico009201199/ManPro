@@ -1,7 +1,7 @@
 <html>
     <body>
         <?php include "../Header/Header.php";
-        include "connection.php";
+        include "../connection.php";
         include "../Sumber Daya Manusia/style.html";
 
         $query = "select * from dbo.prestasi_mhs";

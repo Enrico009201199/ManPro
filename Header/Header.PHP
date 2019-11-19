@@ -43,7 +43,7 @@
         </div>
         <a href="../Penelitian/Penelitian.php">Penelitian</a>
         <a href="../Pengabdian Kepada Masyarakat/PkM.php">Pengabdian Kepada Masyarakat</a>
-		<a href="../Pengabdian Kepada Masyarakat/PkM.php">Prestasi Mahasiswa</a>
+		<a href="../Luaran dan Capaian/Prestasi Mahasiswa.php">Prestasi Mahasiswa</a>
     </div>
 
 </body>

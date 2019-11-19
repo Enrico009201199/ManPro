@@ -28,8 +28,6 @@
                                 <th>Tingkat</th>
 								<th>Judul Kegiatan Kerjasama</th>
 								<th>Manfaat</th>
-								<th>Waktu Mulai</th>
-								<th>Waktu Berakhir</th>
 								<th>Bukti Kerjasama</th>
                             </tr>
                         </thead>
@@ -43,8 +41,6 @@
                                 <td> <?php echo $rows['Tingkat']; ?> </td>
 								<td> <?php echo $rows['JudulKegiatanKerjaSama']; ?> </td>
 								<td> <?php echo $rows['Manfaat']; ?> </td>
-								<td> <?php echo $rows['WaktuMulai']; ?> </td>
-								<td> <?php echo $rows['WaktuBerakhir']; ?> </td>
 								<td> <?php echo $rows['BuktiKerjasama']; ?> </td>
                             </tr>
                             <?php

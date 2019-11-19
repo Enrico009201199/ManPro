@@ -43,10 +43,7 @@
         </div>
         <a href="../Penelitian/Penelitian.php">Penelitian</a>
         <a href="../Pengabdian Kepada Masyarakat/PkM.php">Pengabdian Kepada Masyarakat</a>
-        <div class="dropdown">
-            <button class="dropbtn">Prestasi Mahasiswa
-            </button>
-        </div>
+		<a href="../Pengabdian Kepada Masyarakat/PkM.php">Prestasi Mahasiswa</a>
     </div>
 
 </body>

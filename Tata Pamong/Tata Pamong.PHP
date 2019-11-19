@@ -8,7 +8,7 @@
 			include "../Header/Header.php";
 			include "connection.php";
 			$query = "Select * From Kerjasama";
-			$result = sqlsrv_query($conn, $query);
+			$rst = sqlsrv_query($conn, $query);
 		?>
 
         <div class="">
@@ -35,7 +35,7 @@
                         </thead>
                         <tbody>
                             <?php
-                                while($rows = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
+                                while($rows = sqlsrv_fetch_array($rst, SQLSRV_FETCH_ASSOC)){
                             ?>   
                             <tr>    
                                 <td> <?php echo $rows['No']; ?> </td>
@@ -43,12 +43,28 @@
                                 <td> <?php echo $rows['Tingkat']; ?> </td>
 								<td> <?php echo $rows['JudulKegiatanKerjaSama']; ?> </td>
 								<td> <?php echo $rows['Manfaat']; ?> </td>
-								<td> <?php echo $rows['WaktuMulai']; 
-									$date = strtotime($rows['WaktuMulai']);
-									echo date('Y-m-d H:i:s', $date);?> </td>
-								<td> <?php echo $rows['WaktuBerakhir'];
-									$date = strtotime($rows['WaktuBerakhir']);
-									echo date('Y-m-d H:i:s', $date);?> </td>
+								<td>  
+                                    <?php
+                                        if($rows['WaktuMulai'] != null) {
+                                            $date = $rows['WaktuMulai'];
+                                            $result = $date->format('Y-m-d H:i:s');
+                                            echo $result;
+                                        } else {
+                                            echo "";
+                                        }
+                                    ?>
+                                </td>
+								<td>  
+                                    <?php
+                                        if($rows['WaktuBerakhir'] != null) {
+                                            $date = $rows['WaktuBerakhir'];
+                                            $result2 = $date->format('Y-m-d H:i:s');
+                                            echo $result2;
+                                        } else {
+                                            echo "";
+                                        }
+                                    ?>
+                                </td>
 								<td> <?php echo $rows['BuktiKerjaSama']; ?> </td>
                             </tr>
                             <?php

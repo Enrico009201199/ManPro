@@ -9,7 +9,7 @@
         $stmt = sqlsrv_query($conn,$query);
 
         //Table Header
-            echo "<table>";
+            echo "<h3> Prestasi Mahasiswa </h3> <table>";
             echo "<tr>";
                 echo "<th>Kegiatan</th>";
                 echo "<th>Tahun</th>";
@@ -31,7 +31,6 @@
             echo "</table>";
 
             ?>
-
         <div class="">
 			<a href="Grafik/Grafik Akademik.php" target="_blank">Tampilkan Grafik Kualitas Input</a> 
 		</div>

@@ -33,7 +33,7 @@
             ?>
 
         <div class="">
-			<a href="Grafik/bar.html" target="_blank">Tampilkan Grafik Kualitas Input</a> 
+			<a href="Grafik/Grafik Akademik.php" target="_blank">Tampilkan Grafik Kualitas Input</a> 
 		</div>
         <br>
         <br>

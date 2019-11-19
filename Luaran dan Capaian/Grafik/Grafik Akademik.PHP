@@ -21,20 +21,12 @@
     <script>
 		var data = [3, 2, 6, 12, 1];
 		
-		var colors = [
-						window.chartColors.red,
-						window.chartColors.grey,
-						window.chartColors.yellow,
-						window.chartColors.green,
-						window.chartColors.blue,
-		];
-		
 		var myChart = {
 			type: "bar",
 			data: {
 				datasets : [
 					{/* objek 1*/
-						backgroundColor: colors,
+						label: "Jumlah Prestasi Mahasiswa",
 						data: data,
 					}
 				],

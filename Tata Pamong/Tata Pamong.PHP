@@ -12,7 +12,7 @@
 		?>
 
         <div class="">
-            <h3>Tata Pamong, Tata Kelola dan Kerjasama</h3>
+            <h3>Kerjasama</h3>
         </div>
 
 		
@@ -34,7 +34,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- <?php
+                            <?php
                                 while($rows = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
                             ?>   
                             <tr>    
@@ -49,7 +49,7 @@
                             </tr>
                             <?php
                                 }
-                            ?> -->
+                            ?>
                         </tbody>
                     </table>
                 </div>
